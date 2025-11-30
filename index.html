@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เซอร์ไพรส์ 💖</title>
+
+  <link rel="stylesheet" href="love.css">
+</head>
+
+<body>
+  <div class="wrap" role="main">
+    <canvas id="confettiCanvas"></canvas>
+
+    <header>
+      <div>
+        <h1>เซอร์ไพรส์พิเศษ 💖</h1>
+        <p class="lead">กดปุ่มด้านล่างเพื่อเปิดเซอร์ไพรส์ — เปลี่ยนข้อความ รูป หรือเพลงในไฟล์นี้ได้เลย</p>
+      </div>
+    </header>
+
+    <div class="cover">
+      <button id="openBtn" class="heart-btn" aria-label="เปิดเซอร์ไพรส์">
+        <span class="heart-emoji">💘</span>
+        <span>กดเพื่อเซอร์ไพรส์!</span>
+      </button>
+    </div>
+
+    <div id="mainContent" class="content hidden" aria-hidden="true">
+      <div class="card">
+        <h2>ข้อความสำหรับคนพิเศษ</h2>
+        <div id="message" class="message typed"></div>
+
+        <div style="margin-top:12px; display:flex; gap:8px">
+          <button id="replayBtn" class="btn">เปิดอีกครั้ง</button>
+          <button id="editBtn" class="btn">แก้ข้อความ</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>รูป/เพลง</h3>
+
+          <img id="photo" class="photo" src="https://github.com/face12345678/i-No-love/blob/main/IMG_E3195_-_Copy.JPG?raw=true" alt="รูปคนพิเศษ">
+
+          <div style="margin-top:10px; display:flex; gap:8px; align-items:center">
+            <audio id="song" controls preload="none">
+              <source src="https://github.com/face12345678/i-No-love/blob/main/KANGSOMKS%20x%20RYO%20-%20%E0%B9%82%E0%B8%95%E0%B9%81%E0%B8%A5%E0%B8%A7%20(NOONA)%20Prod.%20KANGSOMKS%20%5BOfficial%20Music%20Video%5D%20(1).mp3" type="audio/mpeg">
+              เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
+            </audio>
+          </div>
+        </div>
+
+        <div style="margin-top:12px; text-align:center">
+          <small>สร้างโดยคนอ้วนที่รักเธอ🐷🐷❤️❤️</small>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <small>#สร้างโดยคนอ้วนที่รักเธอ🐷🐷❤️❤️</small>
+    </footer>
+  </div>
+
+  <script src="love.js"></script>
+</body>
+</html>
